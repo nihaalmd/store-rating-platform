@@ -1,4 +1,3 @@
-
 const pool = require("../config/db");
 
 async function createStore(req, res) {

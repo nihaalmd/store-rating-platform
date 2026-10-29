@@ -1,4 +1,3 @@
-
 const express = require("express");
 const {
   verifyToken,
@@ -12,7 +11,6 @@ const {
 
 const router = express.Router();
 
-// Only administrators can create stores.
 router.post(
   "/",
   verifyToken,
@@ -20,7 +18,6 @@ router.post(
   createStore
 );
 
-// Administrators and normal users can view stores.
 router.get(
   "/",
   verifyToken,

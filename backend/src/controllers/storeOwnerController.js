@@ -1,4 +1,3 @@
-
 const pool = require("../config/db");
 
 async function getDashboard(req, res) {

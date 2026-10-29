@@ -1,4 +1,3 @@
-
 import { NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
 import Brand from "../components/Brand";
 import "./Admin.css";
@@ -16,7 +15,6 @@ function AdminLayout() {
   const pageTitle = pageTitles[location.pathname] || "Dashboard";
 
   function handleLogout() {
-    // Connect real session cleanup when authentication is implemented.
     navigate("/login");
   }
 
